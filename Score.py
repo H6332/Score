@@ -10,4 +10,13 @@ for i in score:
 average = total / len(score)
 
 print(count)
+min = int(score[0])
+max = int(score[0])
+for i in score:
+    if (int(i) < min):
+        min = int(i)
+    if (int(i) > max):
+        max = int(i)
+print(max)
+print(min)
 print(f"{average:.2f}")
